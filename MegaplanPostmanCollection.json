@@ -259,9 +259,9 @@
 							"\r",
 							"pm.test(\"Your test name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.data.id).to.eql(\"3551\");\r",
-							"   \r",
-							"});"
+							"    pm.expect(jsonData.data.id).to.eql(pm.collectionVariables.get(\"id\"));\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
